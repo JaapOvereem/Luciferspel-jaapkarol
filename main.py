@@ -23,3 +23,9 @@ galg = [
 
 time.sleep(0.5)
 print ("We gaan beginnen...")
+
+woordkeuze = random.choice(woorden)
+gekozenwoord = woordkeuze
+
+guesses = ""
+kanzen = 10
