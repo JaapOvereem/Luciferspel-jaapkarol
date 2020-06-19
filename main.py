@@ -29,3 +29,14 @@ gekozenwoord = woordkeuze
 
 guesses = ""
 kanzen = 10
+
+while kanzen > 0:
+   letters_not_guesed = 0             
+    toonwoord='' 
+
+    for char in gekozenwoord:
+      if char in guesses:
+        toonwoord=toonwoord + (char)
+      else:
+        toonwoord=toonwoord + ('_') 
+        letters_not_guesed +=1
