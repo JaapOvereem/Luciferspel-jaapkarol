@@ -6,4 +6,4 @@ print ("Hallo, " + name, "welkom bij galgje!")
 
 print("")
 
-print("Voer een letter in.")
+woorden = ["auto", "fiets", "vrachtwagen", "vliegtuig", "deurklink", "zandloper", "euro", "afrika", "europa", "amerika", "rusland", "china", "loopfiets"]
