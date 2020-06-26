@@ -25,19 +25,29 @@ time.sleep(0.5)
 print ("We gaan beginnen...")
 
 woordkeuze = random.choice(woorden)
-gekozenwoord = woordkeuze
+woord = woordkeuze
 
 guesses = ""
 kanzen = 10
 
 while kanzen > 0:
    letters_not_guesed = 0             
-    toonwoord='' 
+   toonwoord = ''
 
-    for char in gekozenwoord:
+  for char in woord:
       if char in guesses:
         toonwoord=toonwoord + (char)
       else:
         toonwoord=toonwoord + ('_') 
         letters_not_guesed +=1
-    print ('Woord:',toonwoord, '. Al gegokte letters:', guesses)
+
+  print ('Woord:',toonwoord, '. Al gegokte letters:', guesses)
+  print()
+
+    if letters_not_guesed == 0:
+        print ()
+        print ('...')
+           
+        print ('Hoera,', naam, 'Je hebt gewonnen')
+   
+        break              
