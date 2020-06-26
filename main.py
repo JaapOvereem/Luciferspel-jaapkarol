@@ -59,3 +59,15 @@ while kanzen > 0:
    guess = input ('Raad een letter: ') 
 
   guesses += guess  
+  
+  if guess not in woord:  
+ 
+    turns -= 1        
+        
+    galgregel=turns
+    nr_of_to_print_lines=(8-turns)
+    while nr_of_to_print_lines>0:
+      print (galg[galgregel])
+      galgregel +=1 
+      nr_of_to_print_lines -=1
+    print ("")
