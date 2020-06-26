@@ -58,4 +58,4 @@ while kanzen > 0:
         time.sleep(1)   
    guess = input ('Raad een letter: ') 
 
-    
+  guesses += guess  
