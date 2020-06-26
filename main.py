@@ -60,7 +60,7 @@ while kanzen > 0:
 
    guesses += guess  
   
-  if guess not in woord:  
+   if guess not in woord:  
  
     kanzen -= 1        
         
@@ -76,9 +76,10 @@ while kanzen > 0:
 
     print (name + "je hebt nog" + kanzen + "levens")
   
- if turns == 0:           
+   if turns == 0:           
     
     print ()
     print ("...")
     time.sleep(1)   
     print ("Jammer" + name + "je hebt verloren, het woord was:" + woord)
+
