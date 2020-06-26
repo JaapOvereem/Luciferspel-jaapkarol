@@ -71,3 +71,5 @@ while kanzen > 0:
       galgregel +=1 
       nr_of_to_print_lines -=1
     print ("")
+
+    print ('Jammer, fout ...')
