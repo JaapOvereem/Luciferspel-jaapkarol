@@ -43,11 +43,19 @@ while kanzen > 0:
 
    print ("Woord:" + toonwoord + ". Al gegokte letters:" + guesses)
    print ()
+   
 
-    if letters_not_guesed == 0:
+   if letters_not_guesed == 0:
         print ()
         print ('...')
            
         print ('Hoera,', naam, 'Je hebt gewonnen')
    
         break              
+
+        print
+
+        time.sleep(1)   
+   guess = input ('Raad een letter: ') 
+
+    
