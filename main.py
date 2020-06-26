@@ -34,15 +34,15 @@ while kanzen > 0:
    letters_not_guesed = 0             
    toonwoord = ''
 
-  for char in woord:
+   for char in woord:
       if char in guesses:
         toonwoord=toonwoord + (char)
       else:
         toonwoord=toonwoord + ('_') 
         letters_not_guesed +=1
 
-  print ('Woord:',toonwoord, '. Al gegokte letters:', guesses)
-  print()
+   print ("Woord:" + toonwoord + ". Al gegokte letters:" + guesses)
+   print ()
 
     if letters_not_guesed == 0:
         print ()
