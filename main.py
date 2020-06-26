@@ -40,3 +40,4 @@ while kanzen > 0:
       else:
         toonwoord=toonwoord + ('_') 
         letters_not_guesed +=1
+    print ('Woord:',toonwoord, '. Al gegokte letters:', guesses)
