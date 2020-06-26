@@ -49,7 +49,7 @@ while kanzen > 0:
         print ()
         print ("...")
            
-        print ("Hoera," + naam + "Je hebt gewonnen")
+        print ("Hoera," + name + "Je hebt gewonnen")
    
         break              
 
@@ -74,12 +74,12 @@ while kanzen > 0:
 
     print ("Jammer, fout ...")
 
-    print (name + "je hebt nog" + kanzen + "levens")
+    print (name + " je hebt nog " + str (kanzen), "levens")
   
-   if turns == 0:           
+   if kanzen == 0:           
     
     print ()
     print ("...")
     time.sleep(1)   
-    print ("Jammer" + name + "je hebt verloren, het woord was:" + woord)
+    print ("Jammer " + name + " je hebt verloren, het woord was: " + woord)
 
