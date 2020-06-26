@@ -32,13 +32,13 @@ kanzen = 10
 
 while kanzen > 0:
    letters_not_guesed = 0             
-   toonwoord = ''
+   toonwoord = ""
 
    for char in woord:
       if char in guesses:
         toonwoord=toonwoord + (char)
       else:
-        toonwoord=toonwoord + ('_') 
+        toonwoord=toonwoord + ("_") 
         letters_not_guesed +=1
 
    print ("Woord:" + toonwoord + ". Al gegokte letters:" + guesses)
@@ -47,29 +47,32 @@ while kanzen > 0:
 
    if letters_not_guesed == 0:
         print ()
-        print ('...')
+        print ("...")
            
-        print ('Hoera,', naam, 'Je hebt gewonnen')
+        print ("Hoera," + naam + "Je hebt gewonnen")
    
         break              
 
         print
 
         time.sleep(1)   
-   guess = input ('Raad een letter: ') 
+   guess = input ("Raad een letter: ") 
 
   guesses += guess  
   
   if guess not in woord:  
  
-    turns -= 1        
+    kanzen -= 1        
         
-    galgregel=turns
-    nr_of_to_print_lines=(8-turns)
+    galgregel=kanzen
+    nr_of_to_print_lines=(8-kanzen)
     while nr_of_to_print_lines>0:
       print (galg[galgregel])
       galgregel +=1 
       nr_of_to_print_lines -=1
     print ("")
 
-    print ('Jammer, fout ...')
+    print ("Jammer, fout ...")
+
+    print (name + "je hebt nog" + kanzen + "levens")
+  
