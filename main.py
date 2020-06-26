@@ -58,7 +58,7 @@ while kanzen > 0:
         time.sleep(1)   
    guess = input ("Raad een letter: ") 
 
-  guesses += guess  
+   guesses += guess  
   
   if guess not in woord:  
  
@@ -76,3 +76,9 @@ while kanzen > 0:
 
     print (name + "je hebt nog" + kanzen + "levens")
   
+ if turns == 0:           
+    
+    print ()
+    print ("...")
+    time.sleep(1)   
+    print ("Jammer" + name + "je hebt verloren, het woord was:" + woord)
